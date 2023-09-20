@@ -2,10 +2,10 @@ import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <div className="bg-[#23180d] navbar">
+    <div className="bg-[#23180d] text-white navbar">
       <div className="container mx-auto flex justify-between items-center px-16 py-6">
         <Link
-          className="text-5xl text-amber-400 font-extrabold font-serif italic"
+          className="text-5xl text-[#FF9827] font-extrabold font-serif italic"
           to="/"
         >
           Meal Db
@@ -16,7 +16,7 @@ const NavBar = () => {
             placeholder="Search for a Meal…"
             className="py-2 px-4 rounded-l-md"
           />
-          <button className="bg-white py-2 px-3 rounded-r-md">
+          <button className="bg-white text-black py-2 px-3 rounded-r-md">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -33,11 +33,19 @@ const NavBar = () => {
             </svg>
           </button>
         </div>
-        <div className="text-white text-xl font-semibold space-x-7">
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/orders">Orders</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
+        <div className="text-lg space-x-4">
+          <NavLink className="p-2 rounded" to="/">
+            Home
+          </NavLink>
+          <NavLink className="p-2 rounded" to="/orders">
+            Orders
+          </NavLink>
+          <NavLink className="p-2 rounded" to="/about">
+            About
+          </NavLink>
+          <NavLink className="p-2 rounded" to="/contact">
+            Contact
+          </NavLink>
         </div>
       </div>
     </div>

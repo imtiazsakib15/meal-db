@@ -9,6 +9,9 @@ body {
 }
 
 .navbar a.active {
- color: #13ff1b;
- text-decoration: underline;
+    background: #c52d2f;
+}
+
+#category a.active {
+    background: green;
 }

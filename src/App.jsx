@@ -4,6 +4,9 @@ function App() {
   return (
     <>
       <NavBar />
+      <div className="bg-[#2d2013]">
+        
+      </div>
     </>
   );
 }
